@@ -25,7 +25,7 @@ public class OrderServiceImpl {
 
         userCreation.setAge(orderRequest.getAge());
 
-        ResponseEntity<UserCreationResponse> userCreationResponse = restTemplate.postForEntity("http://localhost:8080/users", userCreation, UserCreationResponse.class);
+        ResponseEntity<UserCreationResponse> userCreationResponse = restTemplate.postForEntity("http://localhost:8181/users", userCreation, UserCreationResponse.class);
 
         var orderResponse = new OrderResponse();
 
