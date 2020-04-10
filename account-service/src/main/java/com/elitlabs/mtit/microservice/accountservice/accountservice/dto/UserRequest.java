@@ -2,6 +2,7 @@ package com.elitlabs.mtit.microservice.accountservice.accountservice.dto;
 
 public class UserRequest {
 
+    private String userId;
     private String fullName;
     private String age;
 
@@ -19,6 +20,14 @@ public class UserRequest {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     @Override
