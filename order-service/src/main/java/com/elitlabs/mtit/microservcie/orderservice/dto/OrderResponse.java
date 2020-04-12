@@ -2,6 +2,7 @@ package com.elitlabs.mtit.microservcie.orderservice.dto;
 
 public class OrderResponse {
 
+    private String userId;
     private String orderId;
     private String message;
 
@@ -19,5 +20,13 @@ public class OrderResponse {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }
